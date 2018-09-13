@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Event
-
+from .models import Coment
 
 @admin.register(Event)
 class EventAdmin(admin.ModelAdmin):
@@ -10,7 +10,7 @@ class EventAdmin(admin.ModelAdmin):
     list_editable = ("priority",)
     search_fields = ("event","date")
 
-
+admin.register(Coment)
 
 
 
