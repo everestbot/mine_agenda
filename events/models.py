@@ -15,11 +15,15 @@ class Event(models.Model):
     date = models.DateField()
     event = models.CharField(max_length=100)
     priority = models.CharField(max_length=1, choices=priorities_list)
+    class Meta:
+        ordering =('-date','-priority','event')
+    def number_of_coments(self):
+        return self.comment_event.count()
 
     def __str__(self):
         return self.event
 
-class Coment(models.Model):
+class Comment(models.Model):
     """Comentário efetuados de um determinado evento"""
 
     author = models.CharField(max_length=100)
