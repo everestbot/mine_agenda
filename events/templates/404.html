@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+{% include "header.html"%}
+
+<body>
+    <main role="main">
+        <div class="container py-5">
+            <div class="col-12 col-md-6 offset-md-3 text-center">
+                <img src="{% static '404.png'%}" class="img-fluid">
+                <br/>
+                <h2>Erro 404<br/>
+                <small>Page not Found!</small></h2>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
