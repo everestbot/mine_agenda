@@ -1,0 +1,36 @@
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-7 text-muted">
+                    <h4 class="text-white">Sobre</h4>
+                    <p class="text-light">
+                        Aqui tu coloca o texto que vc quiser
+                    </p>
+                </div>
+                <div class="col-sm-4 offset-md-1">
+                    <h4 class="text-white">Opções</h4>
+                    <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Eventos de Hoje</a></li>
+                    <li><a href="#" class="text-white">Todos os Eventos</a></li>
+                    <li><a href="/admin" target="_blank" class="text-white">Administração</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dar bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <span class="navbar-brand d-flex align-itens-center">
+                <strong><a class="text-white" href="{% url 'agenda-events-index'%}">
+                    Agenda Eventos
+                </a></strong>
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarHeader" aria-controls="navbarHeader"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>

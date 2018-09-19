@@ -1,21 +1,22 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{%load staticfiles%}
 <html lang="pt-BR">
 {% include "header.html" %}
 
 <body>
  <!-- Incluir navbar aqui-->
+ {% include "navbar.html" %}
 <main role="main">
     <div class="jumbotron rounded-0 text-center div-background">
         <h1 class="display-5">Agenda de Eventos</h1>
-
     </div>
+
     <!--criando o botão "Novo evento" -->
     <div class="container text-center">
         <div class="row">
             <div class="col-4 col-md-2 offset-md-3">
                 <a href="#" data-toggle="modal" data-target="#addEvent">
-                    <img src="{% static 'novo.png'%}" class="img-fluild">
+                    <img src="{% static 'novo.png' %}" class="img-fluild">
                 </a><br>
                 <h6 class="py-2">Novo Evento</h6>
             </div>
@@ -27,6 +28,7 @@
                 </a><br>
                 <h6 class="py-2">Eventos de hoje</h6>
             </div>
+<!--criando o botão "Todos os eventos" -->
             <div class="col-4 col-md-2 ">
                 <a href="">
                     <img src="{% static 'todos.png' %}" class="img-fluid">
