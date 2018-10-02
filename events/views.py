@@ -16,8 +16,6 @@ def split_date(string_date):
     for value in string_date.split('-'):
         yield int(value)
 
-
-# Create your views here.
 def index(request):
     """Exibe a página principal da aplicaão."""
     context = {
